@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House of Dreamery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:Montserrat;
+  background:#0b0b0b;
+  color:#fff;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.overlay {
+  background:rgba(0,0,0,0.75);
+  padding:50px;
+  border:1px solid #c9a96e;
+}
+
+h1 {
+  font-family:'Playfair Display';
+  color:#c9a96e;
+  font-size:48px;
+  letter-spacing:3px;
+}
+
+h2,h3 {
+  font-family:'Playfair Display';
+  color:#c9a96e;
+}
+
+.logo {
+  width:200px;
+  margin-bottom:20px;
+}
+
+.btn {
+  background:#c9a96e;
+  color:black;
+  padding:15px 30px;
+  text-decoration:none;
+  border-radius:5px;
+  display:inline-block;
+  margin-top:20px;
+  font-weight:bold;
+}
+
+/* SECTION */
+.section {
+  padding:70px 20px;
+  text-align:center;
+}
+
+/* MENU */
+.menu {
+  background:#111;
+  border:1px solid #c9a96e;
+  max-width:600px;
+  margin:auto;
+  padding:30px;
+  text-align:left;
+}
+
+.menu p {
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px dashed #444;
+  padding:6px 0;
+}
+
+/* FORM */
+input, select {
+  padding:12px;
+  margin:10px;
+  width:250px;
+  border:none;
+  border-radius:5px;
+}
+
+/* ZALO */
+.zalo {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#c9a96e;
+  color:black;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero" id="hero">
+  <div class="overlay">
+
+    <!-- LOGO -->
+    <img id="logo" class="logo">
+
+    <h1>HOUSE OF DREAMERY</h1>
+    <p>Luxury European Barber Experience</p>
+
+    <a href="#booking" class="btn">ĐẶT LỊCH NGAY</a>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="section">
+  <h2>TRẢI NGHIỆM QUÝ ÔNG</h2>
+  <p>Không chỉ là cắt tóc – đó là phong cách sống</p>
+</div>
+
+<!-- MENU -->
+<div class="section">
+  <h2>MENU DỊCH VỤ</h2>
+
+  <div class="menu">
+
+    <h3>Haircut</h3>
+    <p><span>Premium Haircut</span><span>150.000đ</span></p>
+    <p><span>Student Haircut</span><span>120.000đ</span></p>
+    <p><span>Fast Haircut</span><span>100.000đ</span></p>
+    <p><span>Beard Trim</span><span>50.000đ</span></p>
+
+    <h3>Hair Dye</h3>
+    <p><span>Tẩy tóc</span><span>300.000đ</span></p>
+    <p><span>Uốn tóc</span><span>600.000đ</span></p>
+    <p><span>Phục hồi</span><span>400.000đ</span></p>
+    <p><span>Colors</span><span>250k - 1tr</span></p>
+
+    <h3>Hair Curl</h3>
+    <p><span>Classic</span><span>450.000đ</span></p>
+    <p><span>Premlock</span><span>1.000.000đ</span></p>
+    <p><span>Ruffled</span><span>600.000đ</span></p>
+    <p><span>Dreadlock</span><span>1.200.000đ</span></p>
+
+  </div>
+</div>
+
+<!-- FORM -->
+<div id="booking" class="section">
+  <h2>ĐẶT LỊCH</h2>
+
+  <form id="form">
+    <input type="text" id="name" placeholder="Tên"><br>
+    <input type="tel" id="phone" placeholder="SĐT"><br>
+
+    <select id="service">
+      <option>Premium Haircut</option>
+      <option>Student Haircut</option>
+      <option>Fast Haircut</option>
+    </select><br>
+
+    <button class="btn">GỬI</button>
+  </form>
+
+  <p id="msg"></p>
+</div>
+
+<!-- MAP -->
+<div class="section">
+  <h2>ĐỊA CHỈ</h2>
+  <iframe id="map" width="90%" height="300"></iframe>
+</div>
+
+<!-- ZALO -->
+<a id="zalo" class="zalo">Z</a>
+
+<script>
+// 🔥 CHỈNH SỬA TẠI ĐÂY
+const DATA = {
+  hero: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438",
+
+  // 👉 DÁN LINK LOGO Ở ĐÂY (upload lên imgur hoặc github)
+  logo: "LINK_LOGO_CUA_M",
+
+  zalo: "https://zalo.me/0123456789",
+  map: "https://www.google.com/maps?q=Da%20Lat&output=embed"
+};
+
+// RENDER
+document.getElementById("hero").style.backgroundImage = `url(${DATA.hero})`;
+document.getElementById("logo").src = DATA.logo;
+document.getElementById("map").src = DATA.map;
+document.getElementById("zalo").href = DATA.zalo;
+
+// FORM
+document.getElementById("form").addEventListener("submit", function(e){
+  e.preventDefault();
+  document.getElementById("msg").innerText = "Đã gửi! Barber sẽ liên hệ.";
+});
+</script>
+
+</body>
+</html>
