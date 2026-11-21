@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House of Dreamery | Premium Barbershop Experience</title>
+  <link rel="canonical" href="https://houseofdreamery.vercel.app/" />
+  <meta
+    name="description"
+    content="House of Dreamery là premium men's grooming brand và barbershop nam cao cấp tại Ea Kar, Đắk Lắk, mang phong cách gentlemen's club cổ điển."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#020303" />
+  <meta property="og:type" content="business.business" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:url" content="https://houseofdreamery.vercel.app/" />
+  <meta property="og:site_name" content="House of Dreamery" />
+  <meta property="og:title" content="House of Dreamery | Premium Barbershop Experience" />
+  <meta
+    property="og:description"
+    content="Premium men's grooming brand và barbershop nam cao cấp tại Ea Kar, Đắk Lắk."
+  />
+  <meta property="og:image" content="dreamery-client-gentlemen-grooming-02.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="House of Dreamery | Premium Barbershop Experience" />
+  <meta
+    name="twitter:description"
+    content="Premium men's grooming brand và barbershop nam cao cấp tại Ea Kar, Đắk Lắk."
+  />
+  <meta name="twitter:image" content="dreamery-client-gentlemen-grooming-02.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "House of Dreamery Barbershop",
+      "description": "Premium men's grooming brand và barbershop nam cao cấp tại Ea Kar, Đắk Lắk.",
+      "image": "dreamery-client-gentlemen-grooming-02.jpg",
+      "url": "https://houseofdreamery.vercel.app/",
+      "hasMap": "https://maps.app.goo.gl/QdQdgB3VwtDg6VSv8",
+      "sameAs": [
+        "https://www.facebook.com/Houseofdreamery",
+        "https://www.instagram.com/houseofdreamery/"
+      ],
+      "telephone": "+84896397379",
+      "priceRange": "80.000đ - 1.200.000đ",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Trần Phú",
+        "addressLocality": "Ea Kar",
+        "addressRegion": "Đắk Lắk",
+        "addressCountry": "VN"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:30",
+          "closes": "19:00"
+        }
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Premium Haircut" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Skin Fade / Undercut" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hair Wash & Scalp Care" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beard Grooming" } }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      --black: #020303;
+      --matte: #070706;
+      --charcoal: #11100d;
+      --deep-green: #06110f;
+      --green-glass: rgba(7, 18, 16, 0.54);
+      --gold: #b9954f;
+      --gold-soft: #d7b56b;
+      --gold-gradient: linear-gradient(135deg, #fff1b8 0%, #e5c56f 34%, #b88632 68%, #f3dc92 100%);
+      --champagne: #ead8aa;
+      --cream: #f5ead8;
+      --muted: #aaa08e;
+      --line: rgba(215, 181, 107, 0.2);
+      --line-soft: rgba(245, 234, 216, 0.09);
+      --error: #ff8d8d;
+      --success: #a6e8bd;
+      --shadow: 0 34px 90px rgba(0, 0, 0, 0.52);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .hp-field {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      position: relative;
+      margin: 0;
+      min-height: 100vh;
+      color: var(--cream);
+      background:
+        radial-gradient(ellipse at 50% -18%, rgba(215, 181, 107, 0.16) 0%, rgba(215, 181, 107, 0.05) 24%, transparent 48%),
+        radial-gradient(ellipse at 8% 42%, rgba(234, 216, 170, 0.045) 0%, transparent 32%),
+        radial-gradient(ellipse at 100% 22%, rgba(6, 17, 15, 0.52) 0%, transparent 44%),
+        linear-gradient(180deg, #020303 0%, #070706 42%, #030403 100%);
+      background-attachment: fixed;
+      font-family: "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      isolation: isolate;
+      line-height: 1.6;
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      content: "";
+      background:
+        linear-gradient(115deg, transparent 0%, rgba(215, 181, 107, 0.075) 46%, transparent 62%),
+        radial-gradient(ellipse at center, transparent 0%, transparent 52%, rgba(0, 0, 0, 0.76) 100%);
+      opacity: 0.5;
+    }
+
+    body::after {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      content: "";
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.012), rgba(255, 255, 255, 0.012));
+      opacity: 0.18;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .shell {
+      width: min(1160px, calc(100% - 44px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      background: linear-gradient(180deg, rgba(2, 3, 3, 0.88), rgba(2, 3, 3, 0));
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 20px 0;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .nav-logo {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      background: transparent;
+      filter: contrast(1.08) brightness(1.04) drop-shadow(0 14px 22px rgba(0, 0, 0, 0.46));
+    }
+
+    .nav-title {
+      display: block;
+      color: var(--cream);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .nav-subtitle {
+      display: block;
+      margin-top: 4px;
+      color: var(--gold-soft);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: rgba(248, 240, 223, 0.78);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      transition: color 180ms ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--gold-soft);
+      outline: none;
+    }
+
+    .nav-cta {
+      padding: 10px 15px;
+      border: 1px solid var(--line);
+      color: var(--gold-soft);
+    }
+
+    .mobile-booking {
+      display: none;
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      left: 14px;
+      z-index: 20;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--gold);
+      color: #090704;
+      background: linear-gradient(135deg, #f3d98d 0%, #cda75d 55%, #9d7130 100%);
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.46);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+      padding: 138px 0 78px;
+      text-align: center;
+    }
+
+    .hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      content: "";
+      background:
+        linear-gradient(180deg, rgba(2, 3, 3, 0.16), rgba(2, 3, 3, 0.86)),
+        radial-gradient(ellipse at 50% 42%, rgba(201, 164, 92, 0.18) 0%, transparent 38%);
+    }
+
+    .hero-inner {
+      width: min(960px, 100%);
+      animation: heroReveal 900ms ease both;
+    }
+
+    .hero-logo {
+      display: block;
+      width: clamp(180px, 28vw, 320px);
+      height: clamp(180px, 28vw, 320px);
+      margin: 0 auto 32px;
+      object-fit: contain;
+      background: transparent;
+      filter: contrast(1.08) brightness(1.04) drop-shadow(0 30px 48px rgba(0, 0, 0, 0.55));
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--gold-soft);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      color: var(--cream);
+      font-size: clamp(44px, 8.4vw, 108px);
+      text-shadow: 0 18px 44px rgba(0, 0, 0, 0.58);
+    }
+
+    .hero-subheading {
+      margin: 24px auto 0;
+      color: var(--champagne);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(19px, 2.4vw, 30px);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .hero-text {
+      width: min(640px, 100%);
+      margin: 20px auto 0;
+      color: rgba(245, 234, 216, 0.68);
+      font-size: 14px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 34px;
+      flex-wrap: wrap;
+    }
+
+    .button-primary,
+    .button-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 14px 24px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      transition: transform 180ms ease, border-color 180ms ease, filter 180ms ease, color 180ms ease;
+    }
+
+    .button-primary {
+      border: 1px solid var(--gold);
+      color: #080705;
+      background: linear-gradient(135deg, #f2d587 0%, #c69b49 58%, #a67a34 100%);
+      box-shadow: 0 14px 38px rgba(201, 164, 92, 0.18);
+    }
+
+    .button-ghost {
+      border: 1px solid rgba(248, 240, 223, 0.22);
+      color: var(--cream);
+      background: rgba(248, 240, 223, 0.035);
+    }
+
+    .button-primary:hover,
+    .button-primary:focus-visible,
+    .button-ghost:hover,
+    .button-ghost:focus-visible {
+      transform: translateY(-2px);
+      filter: brightness(1.07);
+      outline: none;
+    }
+
+    .section {
+      padding: clamp(86px, 10vw, 144px) 0;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .section-kicker {
+      margin: 0 0 18px;
+      color: var(--gold-soft);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      color: var(--cream);
+      font-size: clamp(34px, 5.2vw, 64px);
+    }
+
+    .story-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.86fr) minmax(320px, 1.14fr);
+      gap: clamp(40px, 7vw, 86px);
+      align-items: end;
+    }
+
+    .story-copy {
+      color: rgba(248, 240, 223, 0.76);
+      font-size: clamp(17px, 2.1vw, 22px);
+      line-height: 1.9;
+    }
+
+    .story-copy p {
+      margin: 0;
+    }
+
+    .story-copy p + p {
+      margin-top: 24px;
+    }
+
+    .signature-line {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 32px;
+      color: var(--gold-soft);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .signature-line::before {
+      width: 72px;
+      height: 1px;
+      background: var(--gold);
+      content: "";
+    }
+
+    .brand-package {
+      background: linear-gradient(180deg, rgba(10, 10, 8, 0.28), rgba(2, 3, 3, 0.76));
+    }
+
+    .ritual-layout,
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.72fr) minmax(340px, 1fr);
+      gap: clamp(34px, 7vw, 82px);
+      align-items: start;
+    }
+
+    .ritual-list,
+    .feature-list,
+    .contact-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .ritual-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      border: 1px solid rgba(215, 181, 107, 0.16);
+      background: rgba(215, 181, 107, 0.12);
+    }
+
+    .ritual-list li,
+    .brand-panel,
+    .contact-card {
+      background: linear-gradient(180deg, rgba(13, 13, 11, 0.84), rgba(5, 5, 4, 0.9));
+    }
+
+    .ritual-list li {
+      min-height: 118px;
+      padding: 24px;
+      color: rgba(248, 240, 223, 0.86);
+      font-size: 15px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .ritual-list span {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--gold-soft);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 46px;
+    }
+
+    .brand-panel {
+      min-height: 280px;
+      border-top: 1px solid var(--gold);
+      padding: clamp(24px, 3.4vw, 34px);
+    }
+
+    .brand-panel h3 {
+      color: var(--cream);
+      font-size: clamp(22px, 2.4vw, 30px);
+    }
+
+    .brand-panel p,
+    .contact-card p {
+      margin: 18px 0 0;
+      color: rgba(245, 234, 216, 0.66);
+      font-size: 14px;
+    }
+
+    .feature-list {
+      margin-top: 22px;
+    }
+
+    .feature-list li,
+    .contact-list li {
+      padding: 13px 0;
+      border-top: 1px solid var(--line-soft);
+      color: rgba(248, 240, 223, 0.86);
+      font-size: 14px;
+    }
+
+    .feature-list li:first-child,
+    .contact-list li:first-child {
+      border-top: 0;
+    }
+
+    .quote-block {
+      margin-top: 34px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+      color: var(--champagne);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(26px, 3.4vw, 42px);
+      line-height: 1.14;
+      text-transform: uppercase;
+    }
+
+    .contact-card {
+      border: 1px solid var(--line);
+      padding: clamp(24px, 3.4vw, 36px);
+    }
+
+    .contact-list {
+      margin-top: 24px;
+    }
+
+    .contact-list strong {
+      display: block;
+      color: var(--gold-soft);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .philosophy {
+      background: linear-gradient(180deg, rgba(2, 3, 3, 0.08), rgba(12, 11, 9, 0.26));
+    }
+
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      margin-top: 46px;
+      border: 1px solid rgba(215, 181, 107, 0.16);
+      background: rgba(215, 181, 107, 0.12);
+    }
+
+    .principle {
+      min-height: 300px;
+      padding: clamp(26px, 4vw, 42px);
+      background: linear-gradient(180deg, rgba(13, 13, 11, 0.84), rgba(5, 5, 4, 0.9));
+    }
+
+    .principle-number {
+      display: block;
+      color: var(--gold);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .principle h3 {
+      margin-top: 46px;
+      color: var(--cream);
+      font-size: clamp(23px, 2.5vw, 30px);
+      line-height: 1.08;
+    }
+
+    .principle p {
+      margin: 18px 0 0;
+      color: rgba(245, 234, 216, 0.64);
+      font-size: 13px;
+    }
+
+    .booking-section {
+      position: relative;
+    }
+
+    .booking-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1.18fr);
+      gap: clamp(34px, 7vw, 74px);
+      align-items: start;
+    }
+
+    .booking-intro {
+      position: sticky;
+      top: 130px;
+    }
+
+    .booking-intro p {
+      margin: 22px 0 0;
+      color: rgba(248, 240, 223, 0.72);
+      font-size: 16px;
+    }
+
+    .booking-note {
+      margin-top: 34px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--gold-soft);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .booking-card {
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(145deg, rgba(14, 13, 11, 0.92), rgba(3, 3, 3, 0.95)),
+        var(--matte);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.46);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 28px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .card-header h3 {
+      color: var(--cream);
+      font-size: clamp(24px, 2.6vw, 32px);
+    }
+
+    .card-badge {
+      flex: 0 0 auto;
+      color: var(--gold-soft);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    form {
+      padding: 28px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .field {
+      min-width: 0;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: rgba(248, 240, 223, 0.82);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .required {
+      color: var(--gold-soft);
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 50px;
+      border: 1px solid rgba(248, 240, 223, 0.15);
+      border-radius: 0;
+      padding: 13px 14px;
+      color: var(--cream);
+      background: rgba(0, 0, 0, 0.42);
+      outline: none;
+      transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+      appearance: none;
+    }
+
+    select {
+      background-image:
+        linear-gradient(45deg, transparent 50%, var(--gold-soft) 50%),
+        linear-gradient(135deg, var(--gold-soft) 50%, transparent 50%);
+      background-position:
+        calc(100% - 18px) 22px,
+        calc(100% - 12px) 22px;
+      background-size: 6px 6px, 6px 6px;
+      background-repeat: no-repeat;
+      padding-right: 40px;
+    }
+
+    option {
+      color: #111;
+      background: var(--cream);
+    }
+
+    textarea {
+      min-height: 116px;
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(248, 240, 223, 0.36);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: rgba(228, 199, 127, 0.76);
+      background: rgba(0, 0, 0, 0.58);
+      box-shadow: 0 0 0 3px rgba(201, 164, 92, 0.1);
+    }
+
+    input,
+    select,
+    textarea {
+      color: var(--gold-soft);
+      -webkit-text-fill-color: var(--gold-soft);
+    }
+
+    option {
+      color: #5b421a;
+      -webkit-text-fill-color: #5b421a;
+    }
+
+    .error-text {
+      min-height: 18px;
+      margin-top: 5px;
+      color: var(--error);
+      font-size: 12px;
+    }
+
+    .price-preview {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 26px 0;
+      padding: 18px 0;
+      border-top: 1px solid var(--line-soft);
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .price-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .price-value {
+      color: var(--gold-soft);
+      font-size: 22px;
+      font-weight: 800;
+      text-align: right;
+    }
+
+    .submit-button {
+      width: 100%;
+      min-height: 56px;
+      border: 1px solid var(--gold);
+      border-radius: 0;
+      padding: 15px 18px;
+      color: #090704;
+      background: linear-gradient(135deg, #f3d98d 0%, #cda75d 55%, #9d7130 100%);
+      cursor: pointer;
+      font-weight: 900;
+      text-transform: uppercase;
+      transition: transform 180ms ease, filter 180ms ease, opacity 180ms ease;
+    }
+
+    .submit-button:hover,
+    .submit-button:focus-visible {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+      outline: none;
+    }
+
+    .submit-button:disabled {
+      cursor: not-allowed;
+      opacity: 0.62;
+      transform: none;
+    }
+
+    .status {
+      display: none;
+      margin-top: 16px;
+      padding: 14px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .status.show {
+      display: block;
+    }
+
+    .status.success {
+      border-color: rgba(166, 232, 189, 0.42);
+      color: var(--success);
+      background: rgba(166, 232, 189, 0.09);
+    }
+
+    .status.error {
+      border-color: rgba(255, 141, 141, 0.42);
+      color: var(--error);
+      background: rgba(255, 141, 141, 0.09);
+    }
+
+    .menu-section {
+      background: linear-gradient(180deg, rgba(2, 3, 3, 0.18), rgba(2, 3, 3, 0.82));
+    }
+
+    .client-section {
+      background:
+        linear-gradient(180deg, rgba(2, 3, 3, 0.54), rgba(8, 8, 7, 0.78)),
+        var(--matte);
+    }
+
+    .menu-header {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(280px, 0.55fr);
+      gap: 34px;
+      align-items: end;
+      margin-bottom: 46px;
+    }
+
+    .menu-header p {
+      margin: 0;
+      color: rgba(248, 240, 223, 0.7);
+      font-size: 15px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .menu-group {
+      border-top: 1px solid var(--gold);
+      background: rgba(8, 8, 7, 0.44);
+    }
+
+    .menu-title {
+      padding: 22px 0 16px;
+      color: var(--gold-soft);
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .menu-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .menu-list li {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: 58px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line-soft);
+      color: rgba(248, 240, 223, 0.86);
+      font-size: 14px;
+    }
+
+    .menu-price {
+      flex: 0 0 auto;
+      color: var(--champagne);
+      font-weight: 800;
+      text-align: right;
+    }
+
+    .client-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .client-card {
+      position: relative;
+      overflow: hidden;
+      min-height: clamp(420px, 52vw, 640px);
+      border: 1px solid rgba(215, 181, 107, 0.2);
+      background: #050505;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+    }
+
+    .client-card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+      object-fit: cover;
+      filter: saturate(0.96) contrast(1.04);
+      transition: transform 420ms ease, filter 420ms ease;
+    }
+
+    .client-card:hover img,
+    .client-card:focus-within img {
+      transform: scale(1.035);
+      filter: saturate(1.04) contrast(1.08);
+    }
+
+    .client-caption {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 26px;
+      background: linear-gradient(180deg, transparent 0%, rgba(2, 3, 3, 0.84) 72%);
+    }
+
+    .client-caption h3 {
+      color: var(--cream);
+      font-size: clamp(22px, 2.4vw, 30px);
+    }
+
+    .client-caption p {
+      margin: 8px 0 0;
+      color: var(--gold-soft);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .client-card.featured {
+      grid-column: span 1;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line-soft);
+      padding: 52px 0;
+      background: #020303;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .footer-brand {
+      color: var(--cream);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(27px, 4vw, 42px);
+      font-weight: 800;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .footer-email {
+      color: var(--gold-soft);
+      font-size: 14px;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+      text-align: right;
+    }
+
+    .reveal {
+      animation: sectionReveal 800ms ease both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 28%;
+    }
+
+    @keyframes heroReveal {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes sectionReveal {
+      from {
+        opacity: 0;
+        transform: translateY(26px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 1ms !important;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav-links {
+        display: none;
+      }
+
+      .story-layout,
+      .ritual-layout,
+      .booking-layout,
+      .menu-header,
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .booking-intro {
+        position: static;
+      }
+
+      .philosophy-grid,
+      .menu-grid,
+      .brand-grid,
+      .client-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .principle,
+      .brand-panel {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100% - 28px, 1160px);
+      }
+
+      .nav {
+        padding: 14px 0;
+      }
+
+      .nav-logo {
+        width: 54px;
+        height: 54px;
+      }
+
+      .nav-title {
+        font-size: 18px;
+      }
+
+      .hero {
+        min-height: 92vh;
+        padding: 112px 0 60px;
+      }
+
+      .hero-logo {
+        width: 178px;
+        height: 178px;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .button-primary,
+      .button-ghost {
+        width: 100%;
+      }
+
+      .mobile-booking {
+        display: flex;
+      }
+
+      .card-header,
+      form {
+        padding: 22px;
+      }
+
+      .card-header,
+      .price-preview,
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .ritual-list {
+        grid-template-columns: 1fr;
+      }
+
+      .client-card {
+        min-height: 520px;
+      }
+
+      .price-value,
+      .footer-email {
+        text-align: left;
+      }
+    }
+
+    body :where(h1, h2, h3, h4, h5, h6, p, span, strong, li, label, small),
+    body a:not(.nav-cta):not(.button-primary):not(.button-ghost):not(.mobile-booking) {
+      color: transparent;
+      background-image: var(--gold-gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a class="mobile-booking" href="#booking">Đặt lịch ngay</a>
+
+    <header class="site-header" aria-label="House of Dreamery navigation">
+      <div class="shell nav">
+        <a class="nav-brand" href="#top" aria-label="House of Dreamery">
+          <img class="nav-logo" src="house-of-dreamery-logo-transparent.png" alt="House of Dreamery logo" />
+          <span>
+            <span class="nav-title">House of Dreamery</span>
+            <span class="nav-subtitle">Premium Barbershop</span>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#story">Story</a>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#ritual">Ritual</a>
+          <a href="#services">Services</a>
+          <a href="#clients">Clients</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="#booking">Đặt lịch</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="shell hero-inner">
+          <img class="hero-logo" src="house-of-dreamery-logo-transparent.png" alt="House of Dreamery logo" />
+          <p class="eyebrow">Since 2020 · Vietnamese Gentleman Grooming</p>
+          <h1 id="hero-title">HOUSE OF DREAMERY</h1>
+          <p class="hero-subheading">Premium Barbershop Experience</p>
+          <p class="hero-text">
+            Premium men's grooming brand tại Ea Kar, Đắk Lắk, dành cho những người đàn ông yêu thích sự chỉn chu, tinh tế và trải nghiệm đẳng cấp.
+          </p>
+          <div class="hero-actions">
+            <a class="button-primary" href="#booking">Đặt lịch ngay</a>
+            <a class="button-ghost" href="#services">Xem dịch vụ</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="section reveal" aria-labelledby="story-title">
+        <div class="shell story-layout">
+          <div>
+            <p class="section-kicker">The story</p>
+            <h2 id="story-title" class="section-title">THE HOUSE OF DREAMERY</h2>
+          </div>
+          <div class="story-copy">
+            <p>
+              House of Dreamery là barbershop nam cao cấp mang phong cách cổ điển lấy cảm hứng từ tinh thần gentlemen's clubs thập niên 1919. Không đơn thuần là một tiệm cắt tóc, Dreamery được xây dựng như một không gian dành cho những người đàn ông yêu thích sự chỉn chu, tinh tế và trải nghiệm đẳng cấp.
+            </p>
+            <p>
+              Tọa lạc tại Ea Kar, Đắk Lắk, House of Dreamery kết hợp giữa kỹ thuật barber hiện đại, nghệ thuật grooming cổ điển và trải nghiệm dịch vụ theo tiêu chuẩn premium.
+            </p>
+            <p>
+              Mỗi chi tiết tại Dreamery, từ ánh sáng, mùi hương, âm nhạc cho đến cách phục vụ, đều được chăm chút nhằm tạo nên cảm giác thư giãn, sang trọng và khác biệt.
+            </p>
+            <div class="signature-line">Dreamery grooming standard</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ritual" class="section brand-package reveal" aria-labelledby="ritual-title">
+        <div class="shell ritual-layout">
+          <div>
+            <p class="section-kicker">Signature experience</p>
+            <h2 id="ritual-title" class="section-title">The Gentleman Ritual</h2>
+            <p class="story-copy">
+              Một trải nghiệm grooming hoàn chỉnh dành cho quý ông hiện đại, được thiết kế để mỗi lịch hẹn là một nghi thức chăm sóc chỉn chu.
+            </p>
+          </div>
+          <ol class="ritual-list">
+            <li><span>01</span>Hair Consultation</li>
+            <li><span>02</span>Premium Haircut</li>
+            <li><span>03</span>Hot Towel Relaxation</li>
+            <li><span>04</span>Hair Wash & Scalp Care</li>
+            <li><span>05</span>Styling Finish</li>
+            <li><span>06</span>Complimentary Drinks</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="philosophy" class="section philosophy reveal" aria-labelledby="philosophy-title">
+        <div class="shell">
+          <p class="section-kicker">Philosophy</p>
+          <h2 id="philosophy-title" class="section-title">Grooming with intent</h2>
+          <div class="quote-block">"Not just a haircut. A ritual for modern gentlemen."</div>
+
+          <div class="philosophy-grid">
+            <article class="principle">
+              <span class="principle-number">01</span>
+              <h3>Precision Haircut</h3>
+              <p>Đường cắt sạch, form tóc rõ, tỉ lệ được tinh chỉnh theo gương mặt và phong cách cá nhân.</p>
+            </article>
+
+            <article class="principle">
+              <span class="principle-number">02</span>
+              <h3>Luxury Grooming</h3>
+              <p>Không chỉ cắt tóc, mà là trải nghiệm chăm sóc chỉn chu trong không gian đen matte và ánh gold.</p>
+            </article>
+
+            <article class="principle">
+              <span class="principle-number">03</span>
+              <h3>Authentic Experience</h3>
+              <p>Dreamery tin rằng grooming không chỉ là làm đẹp, mà còn là cách đàn ông thể hiện sự tự tin, bản lĩnh và phong cách sống.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" class="section booking-section reveal" aria-labelledby="booking-title">
+        <div class="shell booking-layout">
+          <div class="booking-intro">
+            <p class="section-kicker">Reservation</p>
+            <h2 id="booking-title" class="section-title">Book your chair</h2>
+            <p>
+              Chọn dịch vụ, thời gian và barber mong muốn. House of Dreamery sẽ liên hệ xác nhận lịch hẹn trong thời gian sớm nhất.
+            </p>
+            <div class="booking-note">Private appointment · Premium grooming · Confirmation required</div>
+          </div>
+
+          <section class="booking-card" aria-label="Form đặt lịch">
+            <div class="card-header">
+              <h3>Đặt lịch</h3>
+              <span class="card-badge">House of Dreamery</span>
+            </div>
+
+            <form id="bookingForm" novalidate>
+              <div class="hp-field" aria-hidden="true">
+                <label for="companyWebsite">Không điền ô này</label>
+                <input id="companyWebsite" name="companyWebsite" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="customerName">Họ tên <span class="required">*</span></label>
+                  <input id="customerName" name="customerName" type="text" autocomplete="name" placeholder="Nguyễn Văn A" />
+                  <div class="error-text" data-error-for="customerName"></div>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Số điện thoại <span class="required">*</span></label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="0901234567" />
+                  <div class="error-text" data-error-for="phone"></div>
+                </div>
+
+                <div class="field full">
+                  <label for="email">Email nếu có</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="email@example.com" />
+                  <div class="error-text" data-error-for="email"></div>
+                </div>
+
+                <div class="field full">
+                  <label for="service">Dịch vụ <span class="required">*</span></label>
+                  <select id="service" name="service">
+                    <option value="">Chọn dịch vụ</option>
+                    <optgroup label="DỊCH VỤ">
+                      <option value="Premium Haircut" data-price="150.000đ">Premium Haircut — 150.000đ</option>
+                      <option value="Skin Fade / Undercut" data-price="150.000đ">Skin Fade / Undercut — 150.000đ</option>
+                      <option value="Korean Side Part Styling" data-price="150.000đ">Korean Side Part Styling — 150.000đ</option>
+                      <option value="Classic Gentleman Cuts" data-price="150.000đ">Classic Gentleman Cuts — 150.000đ</option>
+                      <option value="Traditional Razor Shave" data-price="120.000đ">Traditional Razor Shave — 120.000đ</option>
+                      <option value="Hair Wash & Scalp Care" data-price="80.000đ">Hair Wash & Scalp Care — 80.000đ</option>
+                      <option value="Hair Styling" data-price="80.000đ">Hair Styling — 80.000đ</option>
+                      <option value="Beard Grooming" data-price="80.000đ">Beard Grooming — 80.000đ</option>
+                      <option value="Student Haircut" data-price="120.000đ">Student Haircut — 120.000đ</option>
+                      <option value="Fast Haircut" data-price="100.000đ">Fast Haircut — 100.000đ</option>
+                      <option value="Beard Trim" data-price="50.000đ">Beard Trim — 50.000đ</option>
+                    </optgroup>
+                    <optgroup label="HAIRDYE | NHUỘM TÓC">
+                      <option value="Tẩy tóc" data-price="300.000đ">Tẩy tóc — 300.000đ</option>
+                      <option value="Uốn tóc" data-price="500.000đ">Uốn tóc — 500.000đ</option>
+                      <option value="Nhuộm Highlight" data-price="400.000đ">Nhuộm Highlight — 400.000đ</option>
+                      <option value="Colors" data-price="250.000đ - 1.000.000đ">Colors — 250.000đ - 1.000.000đ</option>
+                    </optgroup>
+                    <optgroup label="HAIRCURL | UỐN TÓC">
+                      <option value="Classic Hair Curl" data-price="450.000đ">Classic Hair Curl — 450.000đ</option>
+                      <option value="Premium Curl" data-price="600.000đ">Premium Curl — 600.000đ</option>
+                      <option value="Ruffled Hair" data-price="600.000đ">Ruffled Hair — 600.000đ</option>
+                      <option value="Dreadlock" data-price="1.200.000đ">Dreadlock — 1.200.000đ</option>
+                    </optgroup>
+                  </select>
+                  <div class="error-text" data-error-for="service"></div>
+                </div>
+
+                <div class="field">
+                  <label for="date">Ngày <span class="required">*</span></label>
+                  <input id="date" name="date" type="date" />
+                  <div class="error-text" data-error-for="date"></div>
+                </div>
+
+                <div class="field">
+                  <label for="time">Giờ <span class="required">*</span></label>
+                  <input id="time" name="time" type="time" min="08:30" max="19:00" step="1800" />
+                  <div class="error-text" data-error-for="time"></div>
+                </div>
+
+                <div class="field full">
+                  <label for="barber">Barber</label>
+                  <select id="barber" name="barber">
+                    <option value="Tony Lâm">Tony Lâm</option>
+                  </select>
+                </div>
+
+                <div class="field full">
+                  <label for="notes">Ghi chú</label>
+                  <textarea id="notes" name="notes" placeholder="Nhu cầu tư vấn, kiểu tóc mong muốn, lưu ý về thời gian..."></textarea>
+                </div>
+              </div>
+
+              <div class="price-preview" aria-live="polite">
+                <span class="price-label">Giá dịch vụ</span>
+                <strong id="pricePreview" class="price-value">Vui lòng chọn dịch vụ</strong>
+              </div>
+
+              <button id="submitButton" class="submit-button" type="submit">Đặt lịch ngay</button>
+              <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section id="services" class="section menu-section reveal" aria-labelledby="services-title">
+        <div class="shell">
+          <div class="menu-header">
+            <div>
+              <p class="section-kicker">Service menu</p>
+              <h2 id="services-title" class="section-title">The grooming list</h2>
+            </div>
+            <p>
+              Menu dịch vụ được thiết kế như một fine dining grooming menu: rõ ràng, premium và tập trung vào trải nghiệm hoàn thiện của khách hàng nam.
+            </p>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-group">
+              <h3 class="menu-title">Core Grooming</h3>
+              <ul class="menu-list">
+                <li><span>Premium Haircut</span><span class="menu-price">150.000đ</span></li>
+                <li><span>Skin Fade / Undercut</span><span class="menu-price">150.000đ</span></li>
+                <li><span>Korean Side Part Styling</span><span class="menu-price">150.000đ</span></li>
+                <li><span>Classic Gentleman Cuts</span><span class="menu-price">150.000đ</span></li>
+              </ul>
+            </article>
+
+            <article class="menu-group">
+              <h3 class="menu-title">Ritual Care</h3>
+              <ul class="menu-list">
+                <li><span>Traditional Razor Shave</span><span class="menu-price">120.000đ</span></li>
+                <li><span>Hair Wash & Scalp Care</span><span class="menu-price">80.000đ</span></li>
+                <li><span>Hair Styling</span><span class="menu-price">80.000đ</span></li>
+                <li><span>Beard Grooming</span><span class="menu-price">80.000đ</span></li>
+              </ul>
+            </article>
+
+            <article class="menu-group">
+              <h3 class="menu-title">Quick Services</h3>
+              <ul class="menu-list">
+                <li><span>Student Haircut</span><span class="menu-price">120.000đ</span></li>
+                <li><span>Fast Haircut</span><span class="menu-price">100.000đ</span></li>
+                <li><span>Beard Trim</span><span class="menu-price">50.000đ</span></li>
+              </ul>
+            </article>
+
+            <article class="menu-group">
+              <h3 class="menu-title">Hairdye | Nhuộm tóc</h3>
+              <ul class="menu-list">
+                <li><span>Tẩy tóc</span><span class="menu-price">300.000đ</span></li>
+                <li><span>Uốn tóc</span><span class="menu-price">500.000đ</span></li>
+                <li><span>Nhuộm Highlight</span><span class="menu-price">400.000đ</span></li>
+                <li><span>Colors</span><span class="menu-price">250.000đ - 1.000.000đ</span></li>
+              </ul>
+            </article>
+
+            <article class="menu-group">
+              <h3 class="menu-title">Haircurl | Uốn tóc</h3>
+              <ul class="menu-list">
+                <li><span>Classic Hair Curl</span><span class="menu-price">450.000đ</span></li>
+                <li><span>Premium Curl</span><span class="menu-price">600.000đ</span></li>
+                <li><span>Ruffled Hair</span><span class="menu-price">600.000đ</span></li>
+                <li><span>Dreadlock</span><span class="menu-price">1.200.000đ</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="clients" class="section client-section reveal" aria-labelledby="clients-title">
+        <div class="shell">
+          <div class="menu-header">
+            <div>
+              <p class="section-kicker">Client looks</p>
+              <h2 id="clients-title" class="section-title">Gentlemen's choice</h2>
+            </div>
+            <p>
+              Những hình ảnh khách hàng thể hiện tinh thần classic cut, modern style và grooming chỉn chu của House of Dreamery.
+            </p>
+          </div>
+
+          <div class="client-gallery">
+            <article class="client-card">
+              <img src="dreamery-client-classic-cut-01.jpg" alt="Khách hàng House of Dreamery với classic cut modern style" loading="lazy" />
+              <div class="client-caption">
+                <h3>Classic Cut</h3>
+                <p>Modern style</p>
+              </div>
+            </article>
+
+            <article class="client-card featured">
+              <img src="dreamery-client-gentlemen-grooming-02.jpg" alt="Khách hàng House of Dreamery với gentleman grooming" loading="lazy" />
+              <div class="client-caption">
+                <h3>Gentlemen's Grooming</h3>
+                <p>Where tradition meets perfection</p>
+              </div>
+            </article>
+
+            <article class="client-card">
+              <img src="dreamery-client-classic-cut-03.jpg" alt="Khách hàng House of Dreamery với classic cut timeless style" loading="lazy" />
+              <div class="client-caption">
+                <h3>Timeless Style</h3>
+                <p>Precision in every cut</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section brand-package reveal" aria-labelledby="brand-package-title">
+        <div class="shell">
+          <p class="section-kicker">House signature</p>
+          <h2 id="brand-package-title" class="section-title">Dreamery brand package</h2>
+
+          <div class="brand-grid">
+            <article class="brand-panel">
+              <h3>Complimentary Experience</h3>
+              <p>Khách hàng được phục vụ đồ uống và đồ ăn nhẹ miễn phí trong suốt quá trình sử dụng dịch vụ.</p>
+            </article>
+
+            <article class="brand-panel">
+              <h3>Dreamery Atmosphere</h3>
+              <p>Không gian mang phong cách vintage luxury với cảm hứng từ châu Âu cổ điển, kết hợp cùng âm nhạc và mùi hương đặc trưng tạo nên trải nghiệm thư giãn riêng biệt.</p>
+            </article>
+
+            <article class="brand-panel">
+              <h3>Professional Standards</h3>
+              <p>Đội ngũ barber được đào tạo theo kỹ thuật hiện đại với sự chú trọng vào form tóc, texture và trải nghiệm khách hàng.</p>
+            </article>
+
+            <article class="brand-panel">
+              <h3>Dreamery Grooming Products</h3>
+              <p>House of Dreamery đang phát triển dòng sản phẩm chăm sóc tóc và grooming dành riêng cho nam giới.</p>
+              <ul class="feature-list">
+                <li>Premium Shampoo</li>
+                <li>Matte Clay</li>
+                <li>Pomade</li>
+                <li>Sea Salt Spray</li>
+                <li>Beard Oil</li>
+              </ul>
+            </article>
+
+            <article class="brand-panel">
+              <h3>Real-World Details</h3>
+              <ul class="feature-list">
+                <li>Signature scent riêng cho tiệm</li>
+                <li>Đồng phục barber đồng bộ</li>
+                <li>Menu dịch vụ thiết kế như fine dining menu</li>
+                <li>Góc retail trưng bày haircare riêng</li>
+                <li>Playlist riêng cho Dreamery</li>
+              </ul>
+            </article>
+
+            <article class="brand-panel">
+              <h3>Brand Use</h3>
+              <p>Nội dung thương hiệu này phù hợp để dùng cho Facebook Page, Google Business, website, AI search, brochure, booking page và media profile.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal" aria-labelledby="contact-title">
+        <div class="shell contact-layout">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title" class="section-title">Visit House of Dreamery</h2>
+          </div>
+          <div class="contact-card">
+            <h3>House of Dreamery Barbershop</h3>
+            <ul class="contact-list">
+              <li><strong>Address</strong>Trần Phú, Ea Kar, Đắk Lắk, Việt Nam</li>
+              <li><strong>Open daily</strong>08:30 AM - 07:00 PM</li>
+              <li><strong>Phone</strong><a href="tel:+84896397379">+84 896 397 379</a></li>
+              <li><strong>Email</strong><a href="mailto:Dreamerycompanyvietnam@gmail.com">Dreamerycompanyvietnam@gmail.com</a></li>
+              <li><strong>Facebook</strong><a href="https://www.facebook.com/Houseofdreamery" target="_blank" rel="noopener">House of Dreamery</a></li>
+              <li><strong>Instagram</strong><a href="https://www.instagram.com/houseofdreamery/" target="_blank" rel="noopener">@houseofdreamery</a></li>
+              <li><strong>Google Maps</strong><a href="https://maps.app.goo.gl/QdQdgB3VwtDg6VSv8" target="_blank" rel="noopener">Trần Phú, Ea Kar, Đắk Lắk</a></li>
+              <li><strong>Booking</strong>Online booking available</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div class="footer-brand">HOUSE OF DREAMERY</div>
+        <div class="footer-email">
+          <a href="tel:+84896397379">+84 896 397 379</a><br />
+          <a href="mailto:Dreamerycompanyvietnam@gmail.com">Dreamerycompanyvietnam@gmail.com</a><br />
+          <a href="https://www.instagram.com/houseofdreamery/" target="_blank" rel="noopener">Instagram: @houseofdreamery</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const form = document.getElementById("bookingForm");
+    const serviceSelect = document.getElementById("service");
+    const pricePreview = document.getElementById("pricePreview");
+    const statusBox = document.getElementById("formStatus");
+    const submitButton = document.getElementById("submitButton");
+    const dateInput = document.getElementById("date");
+    const honeypot = document.getElementById("companyWebsite");
+
+    const fields = {
+      customerName: document.getElementById("customerName"),
+      phone: document.getElementById("phone"),
+      email: document.getElementById("email"),
+      service: serviceSelect,
+      date: dateInput,
+      time: document.getElementById("time"),
+      barber: document.getElementById("barber"),
+      notes: document.getElementById("notes")
+    };
+
+    dateInput.min = new Date().toISOString().split("T")[0];
+
+    serviceSelect.addEventListener("change", () => {
+      const price = getSelectedServicePrice();
+      pricePreview.textContent = price || "Vui lòng chọn dịch vụ";
+      clearFieldError("service");
+    });
+
+    Object.values(fields).forEach((field) => {
+      field.addEventListener("input", () => clearFieldError(field.id));
+      field.addEventListener("change", () => clearFieldError(field.id));
+    });
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      hideStatus();
+
+      if (!validateForm()) {
+        showStatus("Vui lòng kiểm tra lại các thông tin bắt buộc.", "error");
+        return;
+      }
+
+      const bookingData = buildBookingData();
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Đang gửi...";
+
+      try {
+        await sendBookingEmail(bookingData);
+        showStatus("Đặt lịch thành công! House of Dreamery sẽ liên hệ xác nhận với bạn sớm nhất.", "success");
+        form.reset();
+        pricePreview.textContent = "Vui lòng chọn dịch vụ";
+      } catch (error) {
+        showStatus(
+          error.message === "RATE_LIMIT"
+            ? "Bạn gửi yêu cầu quá nhanh. Vui lòng chờ một chút rồi thử lại."
+            : "Chưa gửi được booking. Vui lòng thử lại sau hoặc liên hệ House of Dreamery qua điện thoại.",
+          "error"
+        );
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = "Đặt lịch ngay";
+      }
+    });
+
+    function validateForm() {
+      let isValid = true;
+      const phonePattern = /^[0-9+\-\s()]{8,16}$/;
+      const emailValue = fields.email.value.trim();
+
+      clearAllErrors();
+
+      if (!fields.customerName.value.trim()) {
+        setFieldError("customerName", "Vui lòng nhập họ tên.");
+        isValid = false;
+      }
+
+      if (!fields.phone.value.trim()) {
+        setFieldError("phone", "Vui lòng nhập số điện thoại.");
+        isValid = false;
+      } else if (!phonePattern.test(fields.phone.value.trim())) {
+        setFieldError("phone", "Số điện thoại chưa đúng định dạng.");
+        isValid = false;
+      }
+
+      if (emailValue && !fields.email.checkValidity()) {
+        setFieldError("email", "Email chưa đúng định dạng.");
+        isValid = false;
+      }
+
+      if (!fields.service.value) {
+        setFieldError("service", "Vui lòng chọn dịch vụ.");
+        isValid = false;
+      }
+
+      if (!fields.date.value) {
+        setFieldError("date", "Vui lòng chọn ngày.");
+        isValid = false;
+      } else if (fields.date.value < dateInput.min) {
+        setFieldError("date", "Ngày đặt lịch không được ở quá khứ.");
+        isValid = false;
+      }
+
+      if (!fields.time.value) {
+        setFieldError("time", "Vui lòng chọn giờ.");
+        isValid = false;
+      } else if (fields.time.value < "08:30" || fields.time.value > "19:00") {
+        setFieldError("time", "Giờ đặt lịch hợp lệ từ 08:30 đến 19:00.");
+        isValid = false;
+      }
+
+      return isValid;
+    }
+
+    function buildBookingData() {
+      const serviceName = fields.service.value;
+      const price = getSelectedServicePrice();
+      const notes = fields.notes.value.trim() || "Không có";
+
+      return {
+        customer_name: fields.customerName.value.trim(),
+        phone: fields.phone.value.trim(),
+        email: fields.email.value.trim() || "Không cung cấp",
+        service: serviceName,
+        price,
+        date: fields.date.value,
+        time: fields.time.value,
+        barber: fields.barber.value,
+        notes,
+        company_website: honeypot.value
+      };
+    }
+
+    async function sendBookingEmail(bookingData) {
+      const response = await fetch("/api/bookings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(bookingData)
+      });
+
+      if (response.status === 429) throw new Error("RATE_LIMIT");
+      if (!response.ok) throw new Error("SEND_FAILED");
+
+      const result = await response.json();
+      if (!result.ok) throw new Error("SEND_FAILED");
+    }
+
+    function getSelectedServicePrice() {
+      const selectedOption = serviceSelect.options[serviceSelect.selectedIndex];
+      return selectedOption ? selectedOption.dataset.price || "" : "";
+    }
+
+    function setFieldError(fieldId, message) {
+      const errorNode = document.querySelector('[data-error-for="' + fieldId + '"]');
+      const field = document.getElementById(fieldId);
+      if (errorNode) errorNode.textContent = message;
+      if (field) field.setAttribute("aria-invalid", "true");
+    }
+
+    function clearFieldError(fieldId) {
+      const errorNode = document.querySelector('[data-error-for="' + fieldId + '"]');
+      const field = document.getElementById(fieldId);
+      if (errorNode) errorNode.textContent = "";
+      if (field) field.removeAttribute("aria-invalid");
+    }
+
+    function clearAllErrors() {
+      Object.keys(fields).forEach(clearFieldError);
+    }
+
+    function showStatus(message, type) {
+      statusBox.textContent = message;
+      statusBox.className = "status show " + type;
+    }
+
+    function hideStatus() {
+      statusBox.textContent = "";
+      statusBox.className = "status";
+    }
+  </script>
+</body>
+</html>
