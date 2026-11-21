@@ -1,5 +1,5 @@
-const RECIPIENT = "Dreamerycompanyvietnam@gmail.com";
-const ALLOWED_SERVICES = new Set([
+const RECIPIENT = "dreamerycompanyvietnam@gmail.com";
+const ALLOWED_SERVICES= new Set([
   "Premium Haircut", "Skin Fade / Undercut", "Korean Side Part Styling",
   "Classic Gentleman Cuts", "Traditional Razor Shave", "Hair Wash & Scalp Care",
   "Hair Styling", "Beard Grooming", "Student Haircut", "Fast Haircut",
